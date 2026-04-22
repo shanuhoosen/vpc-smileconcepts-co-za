@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Smile Concepts — Dr Tasha Pillay. Family & cosmetic dentistry in Durban. Paediatric specialist. Root canals, veneers, whitening. Medical aid accepted. Book today.">
+  <title>Smile Concepts — Dr Tasha Pillay | Family Dentist Durban</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="apple-touch-icon" href="https://smileconcepts.co.za/wp-content/uploads/2019/02/Smile-Concepts-Logo-2.jpg">
+  <script>tailwind.config={theme:{extend:{fontFamily:{heading:['DM Sans','sans-serif'],sans:['Inter','sans-serif']},colors:{primary:{DEFAULT:'#2CCAD6',50:'#edfcfd',100:'#d2f7f9',200:'#aaf0f4',300:'#6ee4ec',400:'#2CCAD6',500:'#1aafbb',700:'#157e88',800:'#10616a',900:'#0d4f56'},deep:'#1C6987',dark:'#0a1628',warm:'#F4B942'}}}}</script>
+  <style>
+    body{font-family:'Inter',sans-serif}
+    h1,h2,h3,h4,.font-heading{font-family:'DM Sans',sans-serif}
+
+    @keyframes scUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes scPulse{0%,100%{opacity:1}50%{opacity:.5}}
+    @keyframes scScroll{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+    @keyframes scFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    .sc-up{animation:scUp .85s cubic-bezier(.22,1,.36,1) both}
+    .sc-d1{animation-delay:.1s}.sc-d2{animation-delay:.22s}.sc-d3{animation-delay:.36s}
+    .sc-d4{animation-delay:.5s}.sc-d5{animation-delay:.64s}
+
+    /* Full-bleed gradient hero with geometric shapes */
+    .hero-bg{background-image:url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&h=900&fit=crop&q=80');background-size:cover;background-position:center 30%;background-attachment:fixed}
+    @media(max-width:768px){.hero-bg{background-attachment:scroll}}
+    .hero-grad{position:relative;overflow:hidden}
+    .hero-overlay{background:linear-gradient(135deg,rgba(10,22,40,.92) 0%,rgba(28,105,135,.82) 40%,rgba(44,202,214,.7) 75%,rgba(110,228,236,.55) 100%)}
+    .hero-grad::before{content:'';position:absolute;top:-20%;right:-10%;width:500px;height:500px;border-radius:50%;background:rgba(244,185,66,.12);filter:blur(80px);z-index:2}
+    .hero-grad::after{content:'';position:absolute;bottom:-15%;left:-5%;width:400px;height:400px;border-radius:50%;background:rgba(44,202,214,.15);filter:blur(60px);z-index:2}
+    .hero-fade{position:absolute;bottom:0;left:0;right:0;height:100px;background:linear-gradient(to bottom,transparent,#fff);z-index:3}
+    .hero-wave{position:absolute;bottom:0;left:0;right:0}
+
+    .glass{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+    .nav-scrolled{background:rgba(255,255,255,.98)!important;backdrop-filter:blur(14px);box-shadow:0 1px 20px rgba(0,0,0,.06)}
+
+    .btn-primary{background:#2CCAD6;color:#fff;box-shadow:0 4px 18px rgba(44,202,214,.35);transition:all .3s}
+    .btn-primary:hover{background:#1aafbb;transform:translateY(-2px);box-shadow:0 8px 28px rgba(44,202,214,.5)}
+    .btn-deep{background:#1C6987;color:#fff;box-shadow:0 4px 16px rgba(28,105,135,.3);transition:all .3s}
+    .btn-deep:hover{background:#157e88;transform:translateY(-2px);box-shadow:0 8px 24px rgba(28,105,135,.45)}
+    .btn-warm{background:#F4B942;color:#0a1628;font-weight:700;box-shadow:0 4px 16px rgba(244,185,66,.3);transition:all .3s}
+    .btn-warm:hover{background:#e5a930;transform:translateY(-2px)}
+    .btn-outline-w{border:2px solid rgba(255,255,255,.45);color:#fff;backdrop-filter:blur(6px);transition:all .3s}
+    .btn-outline-w:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-2px)}
+
+    .svc-card{border:1px solid rgba(44,202,214,.08);box-shadow:0 2px 14px rgba(44,202,214,.04);transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+    .svc-card:hover{transform:translateY(-7px);box-shadow:0 16px 40px rgba(44,202,214,.14)}
+    .svc-icon{background:linear-gradient(135deg,#edfcfd,#d2f7f9);transition:all .3s}
+    .svc-card:hover .svc-icon{background:linear-gradient(135deg,#2CCAD6,#1C6987);transform:scale(1.1) rotate(-4deg)}
+    .svc-card:hover .svc-icon i{color:#fff!important}
+
+    .badge{display:inline-flex;align-items:center;gap:.35rem;background:linear-gradient(135deg,#edfcfd,#d2f7f9);color:#157e88;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.38rem .9rem;border-radius:50px;border:1px solid rgba(44,202,214,.18)}
+    .divider{width:44px;height:3px;background:linear-gradient(90deg,#2CCAD6,#F4B942);border-radius:4px;margin-top:.6rem}
+
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s,padding .3s}
+    .faq-open .faq-answer{max-height:400px;padding-top:.75rem;padding-bottom:.5rem}
+    .faq-open .faq-ch{transform:rotate(180deg)}.faq-ch{transition:transform .3s}
+    .faq-btn:hover{background:rgba(44,202,214,.04)}
+
+    .form-input{transition:border-color .25s,box-shadow .25s}
+    .form-input:focus{border-color:#2CCAD6;box-shadow:0 0 0 3px rgba(44,202,214,.12);outline:none}
+
+    .scroll-dot{animation:scScroll 2.2s ease-in-out infinite}
+    .pulse-dot{animation:scPulse 2s cubic-bezier(.4,0,.6,1) infinite}
+    .float-card{animation:scFloat 3.5s ease-in-out infinite}
+    .mobile-menu{max-height:0;overflow:hidden;transition:max-height .4s}.mobile-menu.open{max-height:500px}
+    .scroll-top{opacity:0;pointer-events:none;transition:opacity .3s}.scroll-top.visible{opacity:1;pointer-events:auto}
+  </style>
+  <link rel="icon" type="image/png" sizes="64x64" href="https://www.google.com/s2/favicons?domain=smileconcepts.co.za&sz=64">
+  <link rel="apple-touch-icon" href="https://smileconcepts.co.za/wp-content/uploads/2019/02/Smile-Concepts-Logo-2.jpg">
+  </head>
+<body class="bg-white text-gray-800">
+
+<!-- NAV -->
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-gray-950 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="#" class="flex items-center gap-2.5">
+        <img src="https://smileconcepts.co.za/wp-content/uploads/2019/02/Smile-Concepts-Logo-2.jpg" alt="Smile Concepts" class="h-10 rounded-lg">
+        <span class="text-lg font-extrabold text-white nav-title transition-colors font-heading">Smile Concepts</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="#services" class="text-sm font-medium text-white/75 hover:text-white nav-link transition">Services</a>
+        <a href="#about" class="text-sm font-medium text-white/75 hover:text-white nav-link transition">About</a>
+        <a href="#process" class="text-sm font-medium text-white/75 hover:text-white nav-link transition">How It Works</a>
+        <a href="#faq" class="text-sm font-medium text-white/75 hover:text-white nav-link transition">FAQ</a>
+        <a href="#contact" class="text-sm font-medium text-white/75 hover:text-white nav-link transition">Contact</a>
+        <a href="#booking" class="btn-warm px-5 py-2.5 rounded-xl text-sm">Book Now</a>
+      </div>
+      <button id="mob-toggle" class="md:hidden p-2 text-white nav-link"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mob-menu" class="mobile-menu md:hidden bg-white border-t shadow-lg">
+    <div class="px-4 py-3 space-y-2">
+      <a href="#services" class="block text-sm font-medium text-gray-600 py-2 mob-link">Services</a>
+      <a href="#about" class="block text-sm font-medium text-gray-600 py-2 mob-link">About</a>
+      <a href="#process" class="block text-sm font-medium text-gray-600 py-2 mob-link">How It Works</a>
+      <a href="#faq" class="block text-sm font-medium text-gray-600 py-2 mob-link">FAQ</a>
+      <a href="#contact" class="block text-sm font-medium text-gray-600 py-2 mob-link">Contact</a>
+      <a href="#booking" class="block btn-warm text-center py-3 rounded-xl text-sm mt-2 mob-link">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO — Full-bleed gradient with geometric shapes (unique style) -->
+<section id="hero" class="hero-grad relative min-h-screen flex items-center">
+  <div class="hero-bg absolute inset-0"></div>
+  <div class="hero-overlay absolute inset-0"></div>
+  <div class="hero-fade"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+    <div class="grid lg:grid-cols-5 gap-10 items-center">
+      <div class="lg:col-span-3">
+        <div class="glass rounded-full px-4 py-2 inline-flex items-center gap-2 mb-7 sc-up sc-d1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+          <span class="text-white/85 text-sm font-medium">Durban &middot; Dr Tasha Pillay</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-[1.08] tracking-tight mb-5 sc-up sc-d2 font-heading">
+          Healthy Smile,<br><span style="color:#F4B942">Healthy Life.</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-white/65 max-w-lg mb-9 sc-up sc-d3 leading-relaxed">
+          Dr Tasha Pillay and her team provide cost-effective dental care for the whole family. Specialising in paediatric and cosmetic dentistry — where every visit is designed to be stress-free.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mb-12 sc-up sc-d4">
+          <a href="tel:0313165199" class="btn-warm px-7 py-3.5 rounded-xl text-sm"><i class="fas fa-phone mr-2"></i>031 316 5199</a>
+          <a href="#services" class="btn-outline-w px-7 py-3.5 rounded-xl font-semibold text-sm"><i class="fas fa-th-large mr-2"></i>View Services</a>
+        </div>
+
+        <div class="flex flex-wrap gap-2.5 sc-up sc-d5">
+          <div class="glass rounded-lg px-3 py-2 text-white/80 text-xs font-medium flex items-center gap-1.5"><i class="fas fa-child" style="color:#F4B942"></i> Kids Specialist</div>
+          <div class="glass rounded-lg px-3 py-2 text-white/80 text-xs font-medium flex items-center gap-1.5"><i class="fas fa-id-card" style="color:#F4B942"></i> Medical Aid Accepted</div>
+          <div class="glass rounded-lg px-3 py-2 text-white/80 text-xs font-medium flex items-center gap-1.5"><i class="fas fa-smile" style="color:#F4B942"></i> Cosmetic Dentistry</div>
+        </div>
+      </div>
+
+      <!-- Floating info card -->
+      <div class="lg:col-span-2 hidden lg:block sc-up sc-d3">
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 rounded-3xl p-8 float-card">
+          <img src="https://smileconcepts.co.za/wp-content/uploads/2019/02/Smile-Concepts-Logo-2.jpg" alt="Smile Concepts" class="h-16 rounded-xl mx-auto mb-5">
+          <h3 class="text-xl font-extrabold text-white text-center mb-1 font-heading">Dr Tasha Pillay</h3>
+          <p class="text-center text-white/60 text-sm mb-4">BDS (UWC) &middot; Paediatric & Cosmetic Specialist</p>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center gap-3 text-white/70"><i class="fas fa-graduation-cap w-5" style="color:#F4B942"></i> University of the Western Cape</div>
+            <div class="flex items-center gap-3 text-white/70"><i class="fas fa-hospital w-5" style="color:#F4B942"></i> Addington Hospital (Community Service)</div>
+            <div class="flex items-center gap-3 text-white/70"><i class="fas fa-certificate w-5" style="color:#F4B942"></i> PG Dip Interceptive Orthodontics</div>
+            <div class="flex items-center gap-3 text-white/70"><i class="fas fa-heart w-5" style="color:#F4B942"></i> Kids & Cosmetic Focused</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave -->
+  <div class="hero-wave"><svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 80V30Q360 80 720 40T1440 30V80H0Z" fill="white"/></svg></div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <div class="badge mx-auto mb-3"><i class="fas fa-tooth text-[10px]"></i> Our Services</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 font-heading">Complete Dental Care</h2>
+      <div class="divider mx-auto"></div>
+      <p class="text-gray-500 mt-4 max-w-xl mx-auto text-sm">Preventative, cosmetic, paediatric, and surgical dentistry — all under one roof.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-heartbeat text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Root Canal Treatment</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Save your natural tooth with expert endodontic therapy. Comfortable, modern techniques.</p>
+      </div>
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-crown text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Crown & Bridge</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Custom-fitted restorations that blend naturally with your smile. Durable and lifelike.</p>
+      </div>
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-child text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Paediatric Dentistry</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Fun, stress-free dental visits for kids. Fissure sealants, fluoride, mouthguards, and more.</p>
+      </div>
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-sun text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Teeth Whitening</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Professional-grade whitening for a brighter, more confident smile. Safe and effective.</p>
+      </div>
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-teeth text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Extractions & Prosthetics</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Gentle surgical extractions with quality denture solutions to restore your smile.</p>
+      </div>
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-sparkles text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Scaling & Root Planing</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Deep cleaning to treat gum disease and protect long-term dental health.</p>
+      </div>
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-smile-beam text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Full Mouth Rehab</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Comprehensive treatment plans combining restorative and cosmetic procedures.</p>
+      </div>
+      <div class="svc-card bg-white rounded-2xl p-6">
+        <div class="svc-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-teeth-open text-lg" style="color:#2CCAD6"></i></div>
+        <h3 class="text-[15px] font-bold text-gray-900 mb-1.5 font-heading">Interceptive Orthodontics</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Early intervention orthodontic solutions for children and adults.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT — different: full-width story layout -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center mb-14">
+      <div class="badge mx-auto mb-3"><i class="fas fa-user-md text-[10px]"></i> Meet Dr Tasha</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 font-heading">Passionate About Your Smile</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-gray-100">
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <img src="https://smileconcepts.co.za/wp-content/uploads/2019/02/Smile-Concepts-Logo-2.jpg" alt="Dr Tasha Pillay" class="w-20 h-20 rounded-2xl object-cover flex-shrink-0">
+          <div>
+            <h3 class="text-xl font-extrabold text-gray-900 font-heading">Dr Tasha Pillay</h3>
+            <p class="text-sm font-semibold mt-0.5 mb-3" style="color:#2CCAD6">BDS (UWC) &middot; PG Dip Interceptive Orthodontics</p>
+            <p class="text-gray-600 leading-relaxed text-sm">A born and bred Durbanite, Dr Tasha obtained her Bachelor in Dental Surgery from the University of the Western Cape in 2013. After community service at Addington Hospital and serving communities in Phoenix, Durban North and Umhlanga, she established her own practice in 2018 at the Kings Park precinct.</p>
+            <p class="text-gray-600 leading-relaxed text-sm mt-3">Characterised by her warm, friendly attitude and constant need to care for her patients, Dr Tasha specialises in paediatric dentistry and cosmetic work. She holds a post-graduate diploma in interceptive orthodontics and is currently pursuing her second diploma in paediatrics.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-gray-100">
+          <div class="text-center p-3 rounded-xl bg-gray-50"><i class="fas fa-id-card mb-2" style="color:#2CCAD6"></i><p class="text-xs font-medium text-gray-600">Medical Aid Contracted</p></div>
+          <div class="text-center p-3 rounded-xl bg-gray-50"><i class="fas fa-money-bill-wave mb-2" style="color:#2CCAD6"></i><p class="text-xs font-medium text-gray-600">Competitive Cash Rates</p></div>
+          <div class="text-center p-3 rounded-xl bg-gray-50"><i class="fas fa-child mb-2" style="color:#2CCAD6"></i><p class="text-xs font-medium text-gray-600">Kids Specialist</p></div>
+          <div class="text-center p-3 rounded-xl bg-gray-50"><i class="fas fa-teeth mb-2" style="color:#2CCAD6"></i><p class="text-xs font-medium text-gray-600">Orthodontics</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <div class="badge mx-auto mb-3"><i class="fas fa-route text-[10px]"></i> How It Works</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 font-heading">Your Visit Made Simple</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="text-center p-6 rounded-2xl border border-gray-100 bg-gradient-to-b from-white to-gray-50">
+        <div class="w-14 h-14 rounded-2xl text-white flex items-center justify-center text-xl font-bold mx-auto mb-4" style="background:linear-gradient(135deg,#2CCAD6,#1C6987)">1</div>
+        <h3 class="font-bold text-gray-900 mb-1 font-heading">Book</h3>
+        <p class="text-sm text-gray-500">Call 031 316 5199 or email us to schedule your appointment.</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl border border-gray-100 bg-gradient-to-b from-white to-gray-50">
+        <div class="w-14 h-14 rounded-2xl text-white flex items-center justify-center text-xl font-bold mx-auto mb-4" style="background:linear-gradient(135deg,#2CCAD6,#1C6987)">2</div>
+        <h3 class="font-bold text-gray-900 mb-1 font-heading">Examine</h3>
+        <p class="text-sm text-gray-500">Thorough check-up with full explanation of findings and treatment options.</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl border border-gray-100 bg-gradient-to-b from-white to-gray-50">
+        <div class="w-14 h-14 rounded-2xl text-white flex items-center justify-center text-xl font-bold mx-auto mb-4" style="background:linear-gradient(135deg,#2CCAD6,#1C6987)">3</div>
+        <h3 class="font-bold text-gray-900 mb-1 font-heading">Treat</h3>
+        <p class="text-sm text-gray-500">Gentle, expert care — stress-free and comfortable at every step.</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl border border-gray-100 bg-gradient-to-b from-white to-gray-50">
+        <div class="w-14 h-14 rounded-2xl text-white flex items-center justify-center text-xl font-bold mx-auto mb-4" style="background:linear-gradient(135deg,#2CCAD6,#1C6987)">4</div>
+        <h3 class="font-bold text-gray-900 mb-1 font-heading">Smile</h3>
+        <p class="text-sm text-gray-500">Leave with a healthier smile and a plan to keep it that way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL — single powerful one from their site -->
+<section id="testimonials" class="py-20 bg-gray-50">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="badge mx-auto mb-3"><i class="fas fa-quote-left text-[10px]"></i> Patient Words</div>
+    <h2 class="text-3xl font-extrabold text-gray-900 mt-3 font-heading">What Our Patients Say</h2>
+    <div class="divider mx-auto mb-10"></div>
+    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-gray-100">
+      <div class="flex justify-center gap-0.5 text-amber-400 mb-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="text-gray-600 italic leading-relaxed">"I would like to take this opportunity to express my gratitude to the amazing staff at your dental practice. The expertise and professionalism shown was first class. I was really happy with the outcome of the cosmetic work done — however Dr Pillay, being the perfectionist that she is, would make further adjustments to make my smile even better. You have given me a reason to smile. Thank you, Smile Concepts."</p>
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style="background:#edfcfd;color:#1C6987">SC</div>
+        <span class="text-sm font-semibold text-gray-800">Smile Concepts Patient</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <div class="badge mx-auto mb-3"><i class="fas fa-question-circle text-[10px]"></i> FAQ</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 font-heading">Frequently Asked Questions</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+    <div class="space-y-3">
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4 text-sm font-heading">Do you accept medical aid?</span><svg class="faq-ch w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Yes — we are contracted to all major medical aids in South Africa. We also offer competitive cash rates for patients without medical aid cover.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4 text-sm font-heading">Is your practice suitable for children?</span><svg class="faq-ch w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Absolutely! Dr Tasha specialises in paediatric dentistry and has a post-graduate diploma in the field. We create a fun, stress-free environment where kids learn to love visiting the dentist.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4 text-sm font-heading">What cosmetic procedures do you offer?</span><svg class="faq-ch w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">We offer professional teeth whitening, composite veneers, full mouth rehabilitation, and smile makeovers. Dr Tasha will work with you to achieve the smile you've always wanted.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4 text-sm font-heading">What should I expect on my first visit?</span><svg class="faq-ch w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Your first visit includes a comprehensive oral examination, X-rays if needed, and a detailed discussion of treatment options. We explain everything clearly before any procedures begin.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4 text-sm font-heading">Do you offer interceptive orthodontics?</span><svg class="faq-ch w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Yes — Dr Tasha holds a post-graduate diploma in interceptive orthodontics and offers a range of solutions for children and adults. Early intervention can prevent more complex treatment later.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="py-20" style="background:linear-gradient(135deg,#edfcfd,#fff)">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="badge mx-auto mb-3"><i class="fas fa-calendar-alt text-[10px]"></i> Book Now</div>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 font-heading">Ready to Smile?</h2>
+    <div class="divider mx-auto"></div>
+    <p class="text-gray-500 mt-4 max-w-lg mx-auto text-sm mb-8">Get in touch to book your appointment. We welcome patients of all ages.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:0313165199" class="btn-primary px-7 py-4 rounded-xl font-semibold text-sm flex items-center gap-2"><i class="fas fa-phone"></i> 031 316 5199</a>
+      <a href="mailto:admin@smileconcepts.co.za" class="btn-deep px-7 py-4 rounded-xl font-semibold text-sm flex items-center gap-2"><i class="fas fa-envelope"></i> Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<!-- Booking Widget -->
+<style>
+  .booking-calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin: 12px 0; }
+  .booking-day { padding: 8px 4px; text-align: center; border-radius: 8px; cursor: pointer; font-size: 13px; transition: all 0.2s; border: 1px solid transparent; }
+  .booking-day:hover { background: #409cc515; border-color: #409cc5; }
+  .booking-day.selected { background: #409cc5; color: white; }
+  .booking-day.disabled { color: #d1d5db; cursor: not-allowed; }
+  .booking-day.today { font-weight: bold; border-color: #409cc5; }
+  .booking-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .booking-nav { background: none; border: none; cursor: pointer; padding: 4px 8px; font-size: 18px; color: #409cc5; }
+  .time-slots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 12px 0; }
+  .time-slot { padding: 8px; text-align: center; border: 1px solid #e2e8f0; border-radius: 8px; cursor: pointer; font-size: 12px; transition: all 0.2s; }
+  .time-slot:hover { border-color: #409cc5; background: #409cc510; }
+  .time-slot.selected { background: #409cc5; color: white; border-color: #409cc5; }
+  .booking-section { background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0; }
+  .booking-steps { display: flex; gap: 8px; margin-bottom: 20px; }
+  .booking-step { flex: 1; text-align: center; padding: 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+  .booking-step.active { background: #409cc5; color: white; }
+  .booking-step.done { background: #18d26e; color: white; }
+  .booking-step.pending { background: #f1f5f9; color: #94a3b8; }
+  .booking-confirmation { display: none; text-align: center; padding: 30px; }
+  .booking-confirmation.show { display: block; }
+  .booking-loading { display: none; text-align: center; padding: 30px; }
+  .booking-loading.show { display: flex; flex-direction: column; align-items: center; }
+  .booking-spinner { width: 40px; height: 40px; border: 3px solid #e2e8f0; border-top-color: #409cc5; border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .booking-error { display: none; text-align: center; padding: 20px; color: #dc2626; }
+  .booking-error.show { display: block; }
+</style>
+
+<section id="booking" class="py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <span class="text-xs font-semibold uppercase tracking-widest" style="color: #409cc5;">Online Booking</span>
+      <h2 class="font-heading text-3xl font-bold mt-3 mb-2" style="color: #2f4d5a;">Book Your Appointment</h2>
+      <p class="text-gray-500 text-sm">Reserve your session directly below. Same-day and next-day slots are often available.</p>
+    </div>
+
+    <div class="grid md:grid-cols-5 gap-8">
+      <!-- Left: Booking Form -->
+      <div class="md:col-span-3">
+        <div class="booking-section">
+          
+          <div class="booking-steps">
+            <div class="booking-step active" id="step1-indicator">1. Service</div>
+            <div class="booking-step pending" id="step2-indicator">2. Date & Time</div>
+            <div class="booking-step pending" id="step3-indicator">3. Details</div>
+          </div>
+
+          
+
+          <!-- Step 1: Service Selection -->
+          <div id="booking-step1" >
+            <label class="block text-sm font-semibold mb-2" style="color: #2f4d5a;">Select Service *</label>
+            <select id="booking-service" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm mb-4" onchange="if(this.value)bookingNextStep(2)">
+              <option value="">Choose a service...</option>
+                            <option value="Root Canal Treatment">Root Canal Treatment</option>
+              <option value="Crown & Bridge">Crown & Bridge</option>
+              <option value="Paediatric Dentistry">Paediatric Dentistry</option>
+              <option value="Teeth Whitening">Teeth Whitening</option>
+              <option value="Extractions & Prosthetics">Extractions & Prosthetics</option>
+              <option value="Scaling & Root Planing">Scaling & Root Planing</option>
+              <option value="Full Mouth Rehabilitation">Full Mouth Rehabilitation</option>
+              <option value="Interceptive Orthodontics">Interceptive Orthodontics</option>
+
+            </select>
+          </div>
+
+          <!-- Step 2: Date & Time -->
+          <div id="booking-step2" style="display:none;">
+            <label class="block text-sm font-semibold mb-2" style="color: #2f4d5a;">Select Date *</label>
+            <div class="booking-header">
+              <button class="booking-nav" onclick="bookingPrevMonth()">&lt;</button>
+              <span id="booking-month-label" class="font-semibold text-sm" style="color: #2f4d5a;"></span>
+              <button class="booking-nav" onclick="bookingNextMonth()">&gt;</button>
+            </div>
+            <div class="booking-calendar" id="booking-calendar"></div>
+
+            <label class="block text-sm font-semibold mt-4 mb-2" style="color: #2f4d5a;">Select Time *</label>
+            <div class="time-slots" id="booking-times"></div>
+
+            <button onclick="bookingNextStep(3)" class="mt-4 w-full py-3 rounded-xl text-white font-semibold text-sm" style="background: #409cc5;">Continue</button>
+          </div>
+
+          <!-- Step 3: Patient Details -->
+          <div id="booking-step3" style="display:none;">
+            <form id="booking-form" onsubmit="submitBooking(event)">
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-xs font-semibold text-gray-500 mb-1">Full Name *</label>
+                  <input type="text" name="patient_name" required class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm" placeholder="Jane Smith">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-gray-500 mb-1">Phone Number *</label>
+                  <input type="tel" name="patient_phone" required class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm" placeholder="+27 82 000 0000">
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="block text-xs font-semibold text-gray-500 mb-1">Email Address</label>
+                <input type="email" name="patient_email" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm" placeholder="jane@example.com">
+              </div>
+              <div class="mb-4">
+                <label class="block text-xs font-semibold text-gray-500 mb-1">Tell Us About Your Condition</label>
+                <textarea name="patient_notes" rows="3" class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm" placeholder="Briefly describe your symptoms or the reason for your visit..."></textarea>
+              </div>
+              <button type="submit" class="w-full py-3 rounded-xl text-white font-semibold text-sm" style="background: linear-gradient(135deg, #18d26e, #0fa855);">
+                Confirm Appointment
+              </button>
+            </form>
+          </div>
+
+          <!-- Loading -->
+          <div id="booking-loading" class="booking-loading">
+            <div class="booking-spinner"></div>
+            <p class="text-gray-500 text-sm mt-4">Booking your appointment...</p>
+          </div>
+
+          <!-- Confirmation -->
+          <div id="booking-confirmation" class="booking-confirmation">
+            <div style="width:60px;height:60px;border-radius:50%;background:rgba(24,210,110,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+              <i class="fas fa-check-circle text-3xl" style="color:#18d26e;"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-2" style="color: #2f4d5a;">Appointment Confirmed!</h3>
+            <p id="booking-confirm-text" class="text-gray-500 text-sm mb-2"></p>
+            <p class="text-gray-400 text-xs mt-4">
+              <i class="fas fa-envelope mr-1"></i> You'll receive a confirmation via email shortly.
+            </p>
+            <p class="text-gray-400 text-xs mt-1">
+              <i class="fas fa-bell mr-1"></i> We'll send you a reminder before your appointment.
+            </p>
+          </div>
+
+          <!-- Error -->
+          <div id="booking-error" class="booking-error">
+            <i class="fas fa-exclamation-circle text-2xl mb-2"></i>
+            <p class="text-sm mb-3">Something went wrong. Please try again or contact us directly.</p>
+            <button onclick="bookingRetry()" class="px-4 py-2 rounded-lg text-white text-sm" style="background:#409cc5;">Try Again</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Practice Info -->
+      <div class="md:col-span-2">
+        <div class="booking-section">
+          <h3 class="font-heading font-bold text-lg mb-4" style="color: #2f4d5a;">Smile Concepts</h3>
+          <div class="flex items-center gap-3 mb-3"><i class="fas fa-phone text-sm" style="color:#409cc5;"></i><a href="tel:0313165199" class="text-sm" style="color:#409cc5;">031 316 5199</a></div>
+<div class="flex items-center gap-3 mb-3"><i class="fas fa-envelope text-sm" style="color:#409cc5;"></i><a href="mailto:admin@smileconcepts.co.za" class="text-sm" style="color:#409cc5;">admin@smileconcepts.co.za</a></div>
+          <div class="mt-4 pt-4 border-t border-gray-100">
+            <p class="text-xs text-gray-400">
+              <i class="fas fa-shield-alt mr-1"></i> Your information is kept confidential and secure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+var bookingState = { selectedDate: null, selectedTime: null, currentMonth: new Date().getMonth(), currentYear: new Date().getFullYear(), practitioner: 'Dr Tasha Pillay' };
+var bookingTimes = ['08:00','08:30','09:00','09:30','10:00','10:30','11:00','11:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30'];
+var bookingApiBase = 'https://solid-rationally-monitor.ngrok-free.app';
+var bookingHasMultiPractitioners = false;
+
+function bookingSelectPractitioner(name) {
+  if (!name) return;
+  bookingState.practitioner = name;
+  bookingNextStep(1);
+}
+
+function bookingNextStep(step) {
+  var steps = ['booking-step0','booking-step1','booking-step2','booking-step3'];
+  steps.forEach(function(id) { var el = document.getElementById(id); if(el) el.style.display = 'none'; });
+  document.getElementById('booking-loading').className = 'booking-loading';
+  document.getElementById('booking-confirmation').className = 'booking-confirmation';
+  document.getElementById('booking-error').className = 'booking-error';
+
+  var el = document.getElementById('booking-step'+step);
+  if (el) el.style.display = 'block';
+
+  // Update step indicators
+  if (bookingHasMultiPractitioners) {
+    var s0 = document.getElementById('step0-indicator');
+    if(s0) s0.className = 'booking-step '+(step>0?'done':'active');
+    var s1 = document.getElementById('step1-indicator');
+    if(s1) s1.className = 'booking-step '+(step>1?'done':step===1?'active':'pending');
+    var s2 = document.getElementById('step2-indicator');
+    if(s2) s2.className = 'booking-step '+(step>2?'done':step===2?'active':'pending');
+    var s3 = document.getElementById('step3-indicator');
+    if(s3) s3.className = 'booking-step '+(step===3?'active':'pending');
+  } else {
+    var s1 = document.getElementById('step1-indicator');
+    if(s1) s1.className = 'booking-step '+(step>1?'done':step<=1?'active':'pending');
+    var s2 = document.getElementById('step2-indicator');
+    if(s2) s2.className = 'booking-step '+(step>2?'done':step===2?'active':'pending');
+    var s3 = document.getElementById('step3-indicator');
+    if(s3) s3.className = 'booking-step '+(step===3?'active':'pending');
+  }
+
+  if(step===2) renderCalendar();
+}
+
+function renderCalendar() {
+  var cal = document.getElementById('booking-calendar');
+  var y = bookingState.currentYear, m = bookingState.currentMonth;
+  document.getElementById('booking-month-label').textContent = new Date(y,m).toLocaleDateString('en-US',{month:'long',year:'numeric'});
+  var firstDay = new Date(y,m,1).getDay();
+  var daysInMonth = new Date(y,m+1,0).getDate();
+  var today = new Date();
+  var html = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(function(d){ return '<div style="font-size:10px;font-weight:600;color:#94a3b8;text-align:center;padding:4px;">'+d+'</div>'; }).join('');
+  for(var i=0;i<firstDay;i++) html += '<div></div>';
+  for(var d=1;d<=daysInMonth;d++) {
+    var date = new Date(y,m,d);
+    var isPast = date < new Date(today.getFullYear(),today.getMonth(),today.getDate());
+    var isSunday = date.getDay()===0;
+    var isToday = date.toDateString()===today.toDateString();
+    var isSelected = bookingState.selectedDate && bookingState.selectedDate.toDateString()===date.toDateString();
+    var cls = 'booking-day';
+    if(isPast||isSunday) cls += ' disabled';
+    if(isToday) cls += ' today';
+    if(isSelected) cls += ' selected';
+    if(isPast||isSunday) html += '<div class="'+cls+'">'+d+'</div>';
+    else html += '<div class="'+cls+'" onclick="selectDate('+y+','+m+','+d+')">'+d+'</div>';
+  }
+  cal.innerHTML = html;
+  renderTimes();
+}
+
+function selectDate(y,m,d) {
+  bookingState.selectedDate = new Date(y,m,d);
+  renderCalendar();
+}
+
+function renderTimes() {
+  var container = document.getElementById('booking-times');
+  if(!bookingState.selectedDate) { container.innerHTML = '<p class="text-xs text-gray-400 col-span-4">Select a date first</p>'; return; }
+  var d = bookingState.selectedDate;
+  var seed = d.getFullYear()*400 + d.getMonth()*32 + d.getDate();
+  container.innerHTML = bookingTimes.map(function(t,i) {
+    var hash = ((seed * 31 + i * 17) % 100);
+    var booked = hash < 30;
+    if(bookingState.selectedTime===t) {
+      return '<div class="time-slot selected" onclick="selectTime(this,\''+t+'\')">'+t+'</div>';
+    } else if(booked) {
+      return '<div class="time-slot" style="background:#fee2e2;color:#dc2626;border-color:#fecaca;cursor:not-allowed;text-decoration:line-through;opacity:0.6;" title="Booked">'+t+'</div>';
+    } else {
+      return '<div class="time-slot" onclick="selectTime(this,\''+t+'\')">'+t+'</div>';
+    }
+  }).join('');
+}
+
+function selectTime(el, time) {
+  bookingState.selectedTime = time;
+  document.querySelectorAll('.time-slot').forEach(function(s){ s.classList.remove('selected'); });
+  el.classList.add('selected');
+}
+
+function bookingPrevMonth() {
+  bookingState.currentMonth--;
+  if(bookingState.currentMonth<0) { bookingState.currentMonth=11; bookingState.currentYear--; }
+  renderCalendar();
+}
+function bookingNextMonth() {
+  bookingState.currentMonth++;
+  if(bookingState.currentMonth>11) { bookingState.currentMonth=0; bookingState.currentYear++; }
+  renderCalendar();
+}
+
+function submitBooking(e) {
+  e.preventDefault();
+  var form = e.target;
+
+  // Validate
+  if (!bookingState.selectedDate || !bookingState.selectedTime) {
+    alert('Please select a date and time for your appointment.');
+    return;
+  }
+
+  var data = {
+    domain: window.location.hostname || 'smileconcepts.co.za',
+    practitioner: bookingState.practitioner || null,
+    service: document.getElementById('booking-service').value,
+    date: (function(d){ var p=function(n){return n<10?'0'+n:n;}; return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate()); })(bookingState.selectedDate),
+    time: bookingState.selectedTime,
+    patient_name: form.patient_name.value,
+    patient_phone: form.patient_phone.value,
+    patient_email: form.patient_email.value || null,
+    notes: form.patient_notes.value || null,
+  };
+
+  // Show loading
+  document.getElementById('booking-step3').style.display = 'none';
+  document.getElementById('booking-loading').className = 'booking-loading show';
+
+  fetch(bookingApiBase + '/api/bookings', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(result) {
+    document.getElementById('booking-loading').className = 'booking-loading';
+    if (result.success) {
+      document.getElementById('booking-confirm-text').textContent = result.confirmation;
+      document.getElementById('booking-confirmation').className = 'booking-confirmation show';
+      if (document.getElementById('step3-indicator'))
+        document.getElementById('step3-indicator').className = 'booking-step done';
+    } else {
+      document.getElementById('booking-error').className = 'booking-error show';
+    }
+  })
+  .catch(function(err) {
+    console.error('Booking error:', err);
+    document.getElementById('booking-loading').className = 'booking-loading';
+    document.getElementById('booking-error').className = 'booking-error show';
+  });
+}
+
+function bookingRetry() {
+  bookingNextStep(3);
+}
+</script>
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <div class="badge mx-auto mb-3"><i class="fas fa-map-marker-alt text-[10px]"></i> Contact</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 font-heading">Contact Us</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <form class="space-y-4 bg-gray-50 p-8 rounded-2xl border border-gray-100"><div style="position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden;"><input type="text" name="website_url_hp" tabindex="-1" autocomplete="off"></div>
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Full Name" class="form-input border border-gray-200 rounded-xl px-4 py-3 text-sm w-full bg-white" required>
+          <input type="tel" placeholder="Phone Number" class="form-input border border-gray-200 rounded-xl px-4 py-3 text-sm w-full bg-white" required>
+        </div>
+        <input type="email" placeholder="Email Address" class="form-input border border-gray-200 rounded-xl px-4 py-3 text-sm w-full bg-white">
+        <textarea placeholder="How can we help?" rows="4" class="form-input border border-gray-200 rounded-xl px-4 py-3 text-sm w-full bg-white resize-none"></textarea>
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div style="margin-top:12px;margin-bottom:8px;"><label style="display:block;font-size:13px;font-weight:600;color:#475569;margin-bottom:4px;">Spam check: What is 8 + 5? *</label><input type="text" name="antispam_answer" required placeholder="Your answer" style="width:120px;border:1px solid #d1d5db;border-radius:8px;padding:8px 12px;font-size:14px;"></div><button type="submit" class="btn-primary w-full py-3.5 rounded-xl font-semibold text-sm"><i class="fas fa-paper-plane mr-2"></i>Send Message</button>
+      </form>
+      <div class="space-y-5">
+        <div class="flex items-start gap-4 bg-gray-50 p-5 rounded-xl border border-gray-100">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#edfcfd"><i class="fas fa-phone" style="color:#2CCAD6"></i></div>
+          <div><h3 class="font-semibold text-gray-900 mb-1 text-sm font-heading">Phone</h3><p class="text-sm"><a href="tel:0313165199" class="hover:underline" style="color:#2CCAD6">031 316 5199</a></p></div>
+        </div>
+        <div class="flex items-start gap-4 bg-gray-50 p-5 rounded-xl border border-gray-100">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#edfcfd"><i class="fas fa-envelope" style="color:#2CCAD6"></i></div>
+          <div><h3 class="font-semibold text-gray-900 mb-1 text-sm font-heading">Email</h3><p class="text-sm"><a href="mailto:admin@smileconcepts.co.za" class="hover:underline" style="color:#2CCAD6">admin@smileconcepts.co.za</a></p></div>
+        </div>
+        <div class="flex items-start gap-4 bg-gray-50 p-5 rounded-xl border border-gray-100">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#edfcfd"><i class="fas fa-map-marker-alt" style="color:#2CCAD6"></i></div>
+          <div><h3 class="font-semibold text-gray-900 mb-1 text-sm font-heading">Location</h3><p class="text-sm text-gray-500">Kings Park Medical Centre, Durban</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#0a1628" class="text-white py-14">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <div class="flex items-center gap-2 mb-4"><img src="https://smileconcepts.co.za/wp-content/uploads/2019/02/Smile-Concepts-Logo-2.jpg" alt="Smile Concepts" class="h-8 rounded-lg"><span class="font-bold text-base font-heading">Smile Concepts</span></div>
+        <p class="text-gray-400 text-sm leading-relaxed">Dr Tasha Pillay — passionate about family and cosmetic dentistry. Contracted to all major medical aids.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-xs uppercase tracking-wider text-gray-400 mb-4 font-heading">Quick Links</h4>
+        <ul class="space-y-2 text-sm"><li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li><li><a href="#about" class="text-gray-300 hover:text-white transition">About</a></li><li><a href="#faq" class="text-gray-300 hover:text-white transition">FAQ</a></li><li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-xs uppercase tracking-wider text-gray-400 mb-4 font-heading">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="tel:0313165199" class="text-gray-300 hover:text-white transition"><i class="fas fa-phone mr-2 text-xs"></i>031 316 5199</a></li>
+          <li><a href="mailto:admin@smileconcepts.co.za" class="text-gray-300 hover:text-white transition"><i class="fas fa-envelope mr-2 text-xs"></i>admin@smileconcepts.co.za</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-gray-500">&copy; 2026 Smile Concepts. All rights reserved.</p>
+      <p class="text-sm text-gray-600">Built by <a href="https://www.vantagepc.co.za" class="hover:underline" style="color:#2CCAD6">Vantage Point Consulting</a></p>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" class="scroll-top fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full flex items-center justify-center shadow-lg" style="background:#2CCAD6;color:#fff" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up text-sm"></i></button>
+
+<script>
+const nav=document.getElementById('main-nav'),navLinks=nav.querySelectorAll('.nav-link'),navTitle=nav.querySelector('.nav-title');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY>80){nav.classList.add('nav-scrolled');navLinks.forEach(l=>{l.style.color='#374151'});if(navTitle)navTitle.style.color='#111827'}
+  else{nav.classList.remove('nav-scrolled');navLinks.forEach(l=>{l.style.color=''});if(navTitle)navTitle.style.color=''}
+  const b=document.getElementById('scroll-top');if(window.scrollY>500)b.classList.add('visible');else b.classList.remove('visible');
+});
+document.getElementById('mob-toggle').addEventListener('click',()=>{document.getElementById('mob-menu').classList.toggle('open')});
+document.querySelectorAll('.mob-link').forEach(a=>{a.addEventListener('click',()=>{document.getElementById('mob-menu').classList.remove('open')})});
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.classList.add('sc-up')}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.svc-card,.faq-item').forEach(el=>{el.style.opacity='0';obs.observe(el)});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+</script>
+
+<script>
+(function(){
+  var _lt=Date.now();
+  var _ans=13;
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      var hp=f.querySelector('[name="website_url_hp"]');
+      if(hp&&hp.value){e.preventDefault();return false;}
+      if(Date.now()-_lt<3000){e.preventDefault();alert('Please wait a moment before submitting.');return false;}
+      var ma=f.querySelector('[name="antispam_answer"]');
+      if(ma&&parseInt(ma.value)!==_ans){e.preventDefault();alert('Incorrect answer. Please try again.');ma.focus();return false;}
+    });
+  });
+})();
+</script>
+
+<!-- WhatsApp Booking Button -->
+<style>
+  #wa-booking-btn {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    font-size: 28px;
+    z-index: 999;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #wa-booking-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(37,211,102,0.5);
+  }
+  #wa-booking-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+  }
+  #wa-booking-tooltip {
+    position: fixed;
+    bottom: 88px;
+    left: 20px;
+    background: #fff;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  #wa-booking-btn:hover + #wa-booking-tooltip {
+    opacity: 1;
+  }
+</style>
+
+<a id="wa-booking-btn" href="https://wa.me/27313165199?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Smile%20Concepts." target="_blank" rel="noopener" aria-label="Book via WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+<div id="wa-booking-tooltip">Book via WhatsApp</div>
+
+
+<!-- AI Chatbot Widget — Powered by SmartPractice -->
+<style>
+  #chatbot-btn { position:fixed; bottom:24px; right:24px; width:60px; height:60px; border-radius:50%; background:#1a365d; color:#fff; border:none; cursor:pointer; box-shadow:0 4px 20px rgba(0,0,0,0.25); font-size:26px; z-index:1000; transition:all 0.3s; }
+  #chatbot-btn:hover { transform:scale(1.1); box-shadow:0 6px 25px rgba(0,0,0,0.3); }
+  #chatbot-window { position:fixed; bottom:100px; right:12px; width:min(380px,calc(100vw - 24px)); max-height:min(520px,calc(100vh - 140px)); background:#fff; border-radius:16px; box-shadow:0 10px 40px rgba(0,0,0,0.15); z-index:1000; display:none; flex-direction:column; overflow:hidden; border:1px solid #e2e8f0; transition:all 0.3s ease; }
+  #chatbot-window.open { display:flex; }
+  #chatbot-window.maximized { bottom:12px; right:12px; width:calc(100vw - 24px); max-width:700px; max-height:calc(100vh - 24px); border-radius:16px; }
+  #chatbot-window.maximized #chat-messages { max-height:calc(100vh - 220px); }
+  #chat-header { background:#1a365d; color:#fff; padding:16px 16px 12px; display:flex; align-items:flex-start; justify-content:space-between; }
+  #chat-header-text h3 { margin:0; font-size:15px; font-weight:700; }
+  #chat-header-text p { margin:3px 0 0; font-size:11px; opacity:0.7; }
+  #chat-header .status { display:inline-block; width:8px; height:8px; background:#4ade80; border-radius:50%; margin-right:6px; }
+  #chat-header .ai-badge { display:inline-block; background:rgba(255,255,255,0.2); padding:2px 8px; border-radius:10px; font-size:9px; font-weight:600; letter-spacing:0.5px; margin-left:8px; }
+  #chat-maximize { background:none; border:none; color:rgba(255,255,255,0.7); cursor:pointer; padding:4px; font-size:16px; line-height:1; transition:color 0.2s; }
+  #chat-maximize:hover { color:#fff; }
+  #chat-messages { flex:1; overflow-y:auto; padding:14px; min-height:200px; max-height:300px; }
+  .chat-msg { max-width:82%; padding:10px 14px; border-radius:14px; margin-bottom:8px; font-size:13px; line-height:1.5; }
+  .chat-bot { background:#f1f5f9; color:#334155; border-bottom-left-radius:4px; }
+  .chat-user { background:#1a365d; color:#fff; margin-left:auto; border-bottom-right-radius:4px; }
+  .chat-typing { background:#f1f5f9; color:#94a3b8; border-bottom-left-radius:4px; font-style:italic; }
+  #chat-quick { border-top:1px solid #f1f5f9; padding:8px 14px; display:flex; flex-wrap:wrap; gap:4px; }
+  .chat-chip { padding:5px 10px; border:1px solid #e2e8f0; background:#fff; color:#475569; border-radius:20px; cursor:pointer; font-size:11px; transition:all 0.2s; white-space:nowrap; }
+  .chat-chip:hover { background:#1a365d; color:#fff; border-color:#1a365d; }
+  #chat-input-row { display:flex; border-top:1px solid #e2e8f0; }
+  #chat-input { flex:1; border:none; padding:12px 14px; font-size:13px; outline:none; }
+  #chat-input::placeholder { color:#94a3b8; }
+  #chat-send { background:#1a365d; color:#fff; border:none; padding:12px 16px; cursor:pointer; font-size:14px; }
+  #chat-send:hover { opacity:0.9; }
+  #chat-send:disabled { opacity:0.5; cursor:not-allowed; }
+</style>
+
+<button id="chatbot-btn" onclick="toggleChat()">💬</button>
+<div id="chatbot-window">
+  <div id="chat-header">
+    <div id="chat-header-text">
+      <h3><span class="status"></span>Smile Concepts<span class="ai-badge">AI</span></h3>
+      <p>AI-powered receptionist — book, cancel, or ask anything</p>
+    </div>
+    <button id="chat-maximize" onclick="toggleMaximize()" title="Expand">&#x26F6;</button>
+  </div>
+  <div id="chat-messages">
+    <div class="chat-msg chat-bot">Hi! 👋 I'm the AI receptionist for Smile Concepts. I can help you:<br><br>📅 <b>Book</b> an appointment<br>🔄 <b>Reschedule</b> or cancel<br>❓ <b>Answer</b> questions about our services<br><br>How can I help you today?</div>
+  </div>
+  <div id="chat-quick">
+    <button class="chat-chip" onclick="askChip('I\'d like to book an appointment')">📅 Book appointment</button>
+    <button class="chat-chip" onclick="askChip('What services do you offer?')">Services</button>
+    <button class="chat-chip" onclick="askChip('What are your hours?')">Hours</button>
+    <button class="chat-chip" onclick="askChip('How do I contact you?')">Contact</button>
+    <button class="chat-chip" onclick="askChip('What should I bring to my first visit?')">First visit</button>
+  </div>
+  <div id="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter')sendMsg()" maxlength="500">
+    <button id="chat-send" onclick="sendMsg()">➤</button>
+  </div>
+</div>
+
+<script>
+var chatHistory = [];
+var chatApiBase = 'https://solid-rationally-monitor.ngrok-free.app';
+var chatBusy = false;
+var practiceContext = {"business_name": "Smile Concepts", "services": ["Root Canal Treatment", "Crown & Bridge", "Paediatric Dentistry", "Teeth Whitening", "Extractions & Prosthetics", "Scaling & Root Planing", "Full Mouth Rehabilitation", "Interceptive Orthodontics"], "phone": "031 316 5199", "email": "admin@smileconcepts.co.za", "address": "", "hours": [], "practitioners": [{"name": "Dr Tasha Pillay", "title": "Dr", "specialty": "", "services": []}]};
+
+function toggleChat(){
+  var w=document.getElementById('chatbot-window');
+  w.classList.toggle('open');
+  document.getElementById('chatbot-btn').textContent=w.classList.contains('open')?'✕':'💬';
+  if(w.classList.contains('open'))document.getElementById('chat-input').focus();
+}
+
+function toggleMaximize(){
+  var w=document.getElementById('chatbot-window');
+  var btn=document.getElementById('chat-maximize');
+  w.classList.toggle('maximized');
+  btn.innerHTML=w.classList.contains('maximized')?'&#x2796;':'&#x26F6;';
+}
+
+function addMsg(from,text){
+  var m=document.getElementById('chat-messages');
+  var d=document.createElement('div');
+  d.className='chat-msg '+(from==='user'?'chat-user':'chat-bot');
+  if(from==='user'){ d.textContent=text; }
+  else { d.innerHTML=text; }
+  m.appendChild(d);
+  m.scrollTop=m.scrollHeight;
+}
+
+function showTyping(){
+  var m=document.getElementById('chat-messages');
+  var d=document.createElement('div');
+  d.className='chat-msg chat-typing';
+  d.id='typing';
+  d.innerHTML='<span style="display:inline-flex;gap:4px;"><span style="width:6px;height:6px;background:#94a3b8;border-radius:50%;animation:bounce 1.4s infinite ease-in-out both;animation-delay:0s"></span><span style="width:6px;height:6px;background:#94a3b8;border-radius:50%;animation:bounce 1.4s infinite ease-in-out both;animation-delay:0.16s"></span><span style="width:6px;height:6px;background:#94a3b8;border-radius:50%;animation:bounce 1.4s infinite ease-in-out both;animation-delay:0.32s"></span></span>';
+  m.appendChild(d);
+  m.scrollTop=m.scrollHeight;
+}
+function hideTyping(){ var t=document.getElementById('typing'); if(t)t.remove(); }
+
+function sendMsg(){
+  if(chatBusy) return;
+  var inp=document.getElementById('chat-input');
+  var q=inp.value.trim();
+  if(!q)return;
+  addMsg('user',q);
+  inp.value='';
+  chatBusy=true;
+  document.getElementById('chat-send').disabled=true;
+  showTyping();
+
+  chatHistory.push({role:'user',content:q});
+
+  fetch(chatApiBase+'/api/chatbot',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      domain: window.location.hostname || 'smileconcepts.co.za',
+      message: q,
+      conversation_history: chatHistory.slice(-10),
+      practice_context: practiceContext
+    })
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(data){
+    hideTyping();
+    chatBusy=false;
+    document.getElementById('chat-send').disabled=false;
+    var reply = data.reply || 'Sorry, I couldn\'t process that. Please try again.';
+    addMsg('bot', reply);
+    chatHistory.push({role:'assistant',content:reply});
+    // If booking was made, hide quick chips and show success
+    if(data.booking_made){
+      var qc = document.getElementById('chat-quick');
+      if(qc) qc.style.display='none';
+    }
+  })
+  .catch(function(err){
+    hideTyping();
+    chatBusy=false;
+    document.getElementById('chat-send').disabled=false;
+    addMsg('bot','I\'m having trouble connecting right now. Please call us at 031 316 5199 for assistance.');
+    console.error('Chatbot error:',err);
+  });
+}
+
+function askChip(q){
+  document.getElementById('chat-input').value=q;
+  sendMsg();
+}
+</script>
+<style>@keyframes bounce{0%,80%,100%{transform:scale(0)}40%{transform:scale(1)}}</style>
+
+</body>
+</html>
